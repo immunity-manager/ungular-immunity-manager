@@ -1,0 +1,8 @@
+{
+  "appId": "immunitymanager.com",
+  "appName": "Immunity Manager",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}

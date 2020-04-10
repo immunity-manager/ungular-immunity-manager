@@ -1,0 +1,41 @@
+<ion-header>
+
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>nutritional Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div>
+    <ion-chip *ngFor="let i of typearray" outline color="tertiary" (click)="filterdata(i)">
+      <ion-label>{{i}}</ion-label>
+    </ion-chip>
+  </div>
+  <div>
+    <ion-chip *ngFor="let i of Datasub" outline color="secondary" (click)="filterdatasub(i)">
+      <ion-label>{{i}}</ion-label>
+    </ion-chip>
+  </div>
+
+  <ion-row lines="full" class="ion-nowrap">
+    <ion-col size="5">
+      <ion-label outline color="tertiary">{{categname}}</ion-label>
+    </ion-col>
+    <ion-col size="2">
+
+    </ion-col>
+    <ion-col size="5">
+      <ion-label outline color="secondary">{{subcategname}} </ion-label>
+    </ion-col>
+  </ion-row>
+
+  <ion-searchbar color="primary"  placeholder="Search">
+
+  </ion-searchbar>
+
+  
+</ion-content>

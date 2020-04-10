@@ -1,0 +1,73 @@
+
+ .homeparentdiv{
+    padding-top: 40px;
+    padding: 20px;
+    margin: 20px;
+     height:280px; 
+     position: relative;
+     width: 280px;
+     margin: auto;
+     background-image: url(../../../assets/Immunity_Manager_LOGO.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+ 
+ .childdiv{
+     text-align: center;
+     vertical-align: center;
+     border:2px solid #02CCFC;
+     background-color: #ffffff;
+     width:100px;
+     height:100px;
+     border-radius: 100px;
+     box-shadow: 1px 1px 3px grey;
+     position: absolute;
+ }
+ .logotext{
+     width: 100px;
+     border:2px solid #02CCFC;
+     background-color: #ffffff;
+     border-radius: 30px;
+     box-shadow: 1px 1px 2px grey;
+     padding: 2px;
+  
+ }
+ .expert{
+     left:0;
+     top:0;
+ }
+ .company{
+     right:0;
+     top:0;
+ }
+ .investor{
+     bottom:0;
+     left:0;
+ }
+ .customer{
+     bottom: 0;
+     right:0;
+ }
+ .homefooter{
+     padding-bottom: 0 ;
+ }
+ .mindsclasscircle{
+    margin-top: 40px;
+    padding-top: 40px ;
+    padding-bottom: 40px ;
+    vertical-align: center;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: 1px 1px 3px grey;
+  }
+   ion-content {
+       --background: #ffffff;
+       --color:#02CCFC;
+       --keyboard-offset: 0px;
+       --offset-bottom: 0px;
+       --offset-top: 0px;
+       --padding-bottom: 0px;
+       --padding-end: 0px;
+       --padding-start: 0px;
+       --padding-top: 0px;
+   }

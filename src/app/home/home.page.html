@@ -1,0 +1,43 @@
+<ion-header [translucent]="true" >
+  <ion-toolbar>
+    <ion-title class="logotitle">
+      Immunity Manager 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-row>
+    <ion-col size="6">
+      <ion-button  expand="block" color="primary" (click)="signin()">
+        sign in
+      </ion-button>
+    </ion-col>
+    <ion-col size="6">
+      <ion-button expand="block" color="dark" fill="outline" (click)="signup()">
+        sign up
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  <div  align="center" >
+    <img  class="imgstyleaddress" src="assets/Immunity_Manager_LOGO.jpg" />
+  </div>
+<br>
+  <ion-text class="logotext">We work for your care </ion-text>
+  <br>
+  <ion-slides #slides class="ion-padding" [options]="sliderOptions" pager="true">
+    <ion-slide *ngFor="let i of ads">
+      <div class="ion-align-self-center">
+        <ion-card-header>
+          <div >
+            <img class="imgstyle" [src]="i.img"/>
+          </div>
+          <ion-card-subtitle>
+            <ion-label>{{i.title}} </ion-label>
+          </ion-card-subtitle>
+          <ion-label>{{i.subtitle}} </ion-label>
+        </ion-card-header>
+        <br>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
